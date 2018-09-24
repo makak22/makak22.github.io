@@ -2130,6 +2130,33 @@
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-    <audio controls autoplay><source src="nonstop.mp3" type="audio/mp3"><source src="upst.mp3" type="auio/mp3"><source src="2mj.mp3" type="audio/mp3"></audio>
+    <audio controls autoplay><source src="nonsto1p.mp3" type="audio/mp3"><source src="upst.mp3" type="auio/mp3"><source src="2mj.mp3" type="audio/mp3"></audio>
+    
+    <script>
+			window.addEventListener('load', () => document.querySelector('.code-container').appendChild(document.createTextNode(document.querySelector('.source-code').innerText)));
+		</script>
+		<script class="source-code">
+			window.addEventListener('load', () => {
+				// noinspection JSUnresolvedVariable
+				let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+				let xhr = new XMLHttpRequest();
+				xhr.open('GET', 'upset.mp3');
+				xhr.responseType = 'arraybuffer';
+				xhr.addEventListener('load', () => {
+					let playsound = (audioBuffer) => {
+						let source = audioCtx.createBufferSource();
+						source.buffer = audioBuffer;
+						source.connect(audioCtx.destination);
+						source.loop = false;
+						source.start();
+
+					
+					};
+
+					audioCtx.decodeAudioData(xhr.response).then(playsound);
+				});
+				xhr.send();
+			});
+		</script>
 </body>
 </html>
