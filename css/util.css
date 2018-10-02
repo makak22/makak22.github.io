@@ -3967,6 +3967,11 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
   	color: white;
 }
 
+.hov11:hover {
+    background-color: #25d366;
+    color: black;
+}
+
 .hov2:hover {
 	color: white;
 	text-decoration: underline;
