@@ -163,7 +163,6 @@
     $('.btn-num-product-down').on('click', function(e){
         e.preventDefault();
         var numProduct = Number($(this).next().val());
-        var numPrice = Number($(this).next().val());
         if(numProduct > 1) $(this).next().val(numProduct - 1);
     });
 
