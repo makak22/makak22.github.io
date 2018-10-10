@@ -1,0 +1,24 @@
+[
+  { 
+    "name":"Iphone XR",
+    "image": "images/item-02.jpg",
+    "url":"iphone-xr.html",
+    "brand": "Apple"
+  },
+  {
+    "name":"Justin Dean",
+    "image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAAIMAAAAJGExNTE4OWY4LWU4ODMtNDA2ZS1iNWI1LWNkYmIyOWMyMGQ5Zg.jpg",
+    "location":"Muscatine, IA"
+  },
+  {
+    "name":"Nora Blake",
+    "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/0b8/118/387e091.jpg",
+    "location":"Seattle, WA"
+  },
+  {
+    "name":"Russell Fox",
+    "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/000/084/26e/2d9e05b.jpg",
+    "location":"Albuquerque, NM"
+  }
+
+]
