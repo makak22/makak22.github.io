@@ -322,12 +322,12 @@ drift.load('gftadc7sk5ww');
 						</h2>
 
 						<span class="caption2-slide1 m-text27 t-center animated visible-false m-b-30" data-appear="rotateInUpRight">
-							MacBook Pro TouchBar
+							MacBook Pro Touch Bar 15'
 						</span>
 
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
 							<!-- Button -->
-							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+							<a href="macbook-pro-touchbar-15.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
 								Acheter
 							</a>
 						</div>
@@ -366,7 +366,7 @@ drift.load('gftadc7sk5ww');
 
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
 							<!-- Button -->
-							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+							<a href="samsung-note-9.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
 								Acheter
 							</a>
 						</div>
@@ -454,9 +454,9 @@ drift.load('gftadc7sk5ww');
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-                                        <a href="product-detail.html#cidalo">
+                                        <a href="macbook-pro-touchbar-15.html">
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+											Voir
 										</button>
 									</div>
 								</div>
@@ -468,7 +468,7 @@ drift.load('gftadc7sk5ww');
 								</a>
 
 								<span class="block2-price m-text6 p-r-5">
-									1.500.000 FCFA
+									1.600.000 FCFA
 								</span>
 							</div>
 						</div>
@@ -488,20 +488,21 @@ drift.load('gftadc7sk5ww');
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
+                                        <a href="samsung-note-9.html">
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+											Voir
+                                        </button></a>
 									</div>
 								</div>
 							</div>
 
 							<div class="block2-txt p-t-20" style="text-align: center">
-								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+								<a href="samsung-note-9.html" class="block2-name dis-block s-text3 p-b-5">
 									Samsung Galaxy Note 9
 								</a>
 
 								<span class="block2-price m-text6 p-r-5">
-									650.000 FCFA
+									700.000 FCFA
 								</span>
 							</div>
 						</div>
@@ -522,7 +523,7 @@ drift.load('gftadc7sk5ww');
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+											Voir
 										</button>
 									</div>
 								</div>
@@ -1271,7 +1272,7 @@ drift.load('gftadc7sk5ww');
 								<!-- Block2 -->
 								<div class="block2">
 									<div class="block2-img wrap-pic-w of-hidden pos-relative">
-										<img src="images/item-15.jpg" alt="IMG-PRODUCT">
+										<img src="images/samung-galaxy-note-9-cuivre.jpg" alt="IMG-PRODUCT">
 
 										<div class="block2-overlay trans-0-4">
 											<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -1281,20 +1282,21 @@ drift.load('gftadc7sk5ww');
 
 											<div class="block2-btn-addcart w-size1 trans-0-4">
 												<!-- Button -->
+                                                <a href="samsung-note-9.html">
 												<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-													Add to Cart
-												</button>
+													Voir
+                                                 </button></a>
 											</div>
 										</div>
 									</div>
 
 									<div class="block2-txt p-t-20" style="text-align: center">
-										<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-											Denim jacket blue
+										<a href="samsung-note-9.html" class="block2-name dis-block s-text3 p-b-5">
+											Samsung Galaxy Note 8
 										</a>
 
 										<span class="block2-price m-text6 p-r-5">
-											$92.50
+											700.000 FCFA
 										</span>
 									</div>
 								</div>
@@ -2062,29 +2064,5 @@ drift.load('gftadc7sk5ww');
     <script>
 			window.addEventListener('load', () => document.querySelector('.code-container').appendChild(document.createTextNode(document.querySelector('.source-code').innerText)));
 		</script>
-		<script class="source-code">
-			window.addEventListener('load', () => {
-				// noinspection JSUnresolvedVariable
-				let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-				let xhr = new XMLHttpRequest();
-				xhr.open('GET', 'upset.mp3');
-				xhr.responseType = 'arraybuffer';
-				xhr.addEventListener('load', () => {
-					let playsound = (audioBuffer) => {
-						let source = audioCtx.createBufferSource();
-						source.buffer = audioBuffer;
-						source.connect(audioCtx.destination);
-						source.loop = false;
-						source.start();
-
-					
-					};
-
-					audioCtx.decodeAudioData(xhr.response).then(playsound);
-				});
-				xhr.send();
-			});
-		</script>
-    
 </body>
 </html>
