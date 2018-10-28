@@ -2,7 +2,7 @@
   "name": "LEDENWA.COM",
   "short_name": "Ledenwa",
   "display": "minimal-ui",
-  "start_url": "/https://ledenwa.con/index.html",
+  "start_url": "https://ledenwa.con/index.html",
   "theme_color": "#673ab6",
   "background_color": "#111111",
   "icons": [
