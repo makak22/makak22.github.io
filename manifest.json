@@ -1,9 +1,9 @@
 {
   "name": "VIPI CODELAB",
   "short_name": "CodeLab",
-  "display": "minimal-ui",
+  "display": "standalone",
   "start_url": "/",
-  "theme_color": "#673ab6",
+  "theme_color": "#423f3f",
   "background_color": "#111111",
   "icons": [
     {
