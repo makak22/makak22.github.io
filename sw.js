@@ -18,16 +18,17 @@ self.addEventListener('install', function(e) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/dragon.html',
-        '/faq.html',
+        '/assets/css/images/bg.jpg',
+        '/assets/css/images/overlay.png',
         '/manifest.json',
-        '/background.jpeg',
-        '/construction.gif',
-        '/dragon.png',
-        '/logo.png',
+        '/images/pic01.jpg',
+        '/images/me.jpg',
+        '/images/pic01.jpg',
+        '/images/pic02.jpg',
+        '/images/pic03.jpg',
         '/site.js',
-        '/dragon.js',
-        '/styles.css',
+        '/noscript.css',
+        '/main.css',
       ]);
     })
   );

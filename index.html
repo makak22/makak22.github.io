@@ -1,61 +1,117 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <title>ledenwa</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-  <script defer src="crypto.js"></script>
-  <script defer src="site.js"></script>
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <link rel="manifest" href="manifest.json" />
-</head>
-<body>
+<!DOCTYPE HTML>
 
-<header>
+<html>
+	<head>
+		<title>VIPI CODELAB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+          <script defer src="crypto.js"></script>
+          <script defer src="site.js"></script>
+          <link rel="manifest" href="manifest.json" />
+	</head>
+	<body class="is-preload">
 
-  <h1>LEDENWA</h1>
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="dragon.html">Dragotchi</a></li>
-    <li><a href="https://ledenwa.com">Ledenwa</a></li>
-  </ul>
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon fa-home"><span>Home</span></a>
+						<a href="#work" class="icon fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+						<a href="https://chat.whatsapp.com/lgW9crqcC0b8MBgo7aYNjv" class="icon fa-whatsapp" target="_blank"><span>Whatsapp</span></a>
+					</nav>
 
-</header>
+				<!-- Main -->
+					<div id="main">
 
-<hr />
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Le Vipi</h1>
+									<p>Web Programer</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
 
-<section>
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2 style="text-align: center">Work</h2>
+								</header>
+								<p style="text-align: center">
+									There is some of my works.<br/>
+                                     i'm a frontend programer, learning HTML, CSS, JAVASCRIPT and PWA.<br/>
+                                    Ofcourse I'll be a fullstack programer.<br/>
+                                    So if you want to join my team, click on the whatsapp link.
+                                    
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+										
+									</div>
+								</section>
+							</article>
 
-  <h2>Home</h2>
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
 
-  <p>
-    Click and play with your very own Dragon! Feed it gold and watch it grow over time.
-  </p>
-  <p>
-    Soon it will be an excited little dragon eating villagers and burning houses down.
-  </p>
-  <p>
-    To get started, click on the <a href="dragon.html">Dragotchi link</a>!
-  </p>
+					</div>
 
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; VIPI CODELAB.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+						</ul>
+					</div>
 
-</section>
+			</div>
 
-<hr />
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-<footer>
-
-</footer>
-
-<div class="counter">
-  <span>0</span>
-  <span>0</span>
-  <span>0</span>
-  <span>2</span>
-  <span>0</span>
-  <span>1</span>
-  <span>6</span>
-</div>
-
-</body>
+	</body>
 </html>

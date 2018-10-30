@@ -1,8 +1,8 @@
 {
-  "name": "LEDENWA.COM",
-  "short_name": "Ledenwa",
+  "name": "VIPI CODELAB",
+  "short_name": "CodeLab",
   "display": "minimal-ui",
-  "start_url": "https://ledenwa.con/index.html",
+  "start_url": "/",
   "theme_color": "#673ab6",
   "background_color": "#111111",
   "icons": [
