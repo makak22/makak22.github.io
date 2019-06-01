@@ -23,7 +23,7 @@ const aleatoire = Math.floor(Math.random() * citation.length);
     authors.textContent = author;
 })  */
 
-let shakeEvent = new Shake({threshold: 15});
+var shakeEvent = new Shake({threshold: 15});
     shakeEvent.start();
     window.addEventListener('shake', function(){
         const aleatoire = Math.floor(Math.random() * citation.length);
