@@ -1,11 +1,17 @@
 
 #container{
   max-width: 667px;
-  position: absolute;
-  top: 30%;
   text-align: center;
-  margin: 10px;
 }
 .containt{
+  position: absolute;
+  top: 30%;
   font-size: 30px;
+  margin: 10px;
+}
+
+button{
+    position: absolute;
+    top: 90%;
+    right: 40%
 }

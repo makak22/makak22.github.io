@@ -1,6 +1,4 @@
 const aleatoire = Math.floor(Math.random() * citations.length);
-
-
 const blockquote = document.querySelector('.quotes');
 blockquote.textContent = citations[aleatoire];
 /*
