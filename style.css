@@ -1,0 +1,11 @@
+
+#container{
+  max-width: 667px;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  margin: 10px;
+}
+.containt{
+  font-size: 30px;
+}
