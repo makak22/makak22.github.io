@@ -12,7 +12,7 @@ const aleatoire = Math.floor(Math.random() * citations.length);
 var shakeEvent = new shake({threshold: 15});
     shakeEvent.start();
     window.addEventListener('shake', function(){
-        const aleatoire = Math.floor(Math.random() * citation.length);
+    const aleatoire = Math.floor(Math.random() * citations.length);
     const blockquote = document.querySelector('.quotes');
     blockquote.textContent = citations[aleatoire];
     }, false);
