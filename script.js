@@ -9,7 +9,7 @@ const aleatoire = Math.floor(Math.random() * citations.length);
 })  
 */
 
-var shakeEvent = new Shake({threshold: 15});
+var shakeEvent = new shake({threshold: 15});
     shakeEvent.start();
     window.addEventListener('shake', function(){
         const aleatoire = Math.floor(Math.random() * citation.length);
