@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   
+    <head>
+       <title>Citation du jour</title>
+       <meta charset="utf-8">
+       <meta name=viewport content="width=device-width, initial-scale=1">
+       <meta name="Description" content="Citations de la mission internationale Jesus qui guerit">
+       <link href="style/main.css" type="text/css" rel="stylesheet">
+       <link rel="manifest" href="manifest.json">
+       <link rel="icon" type="image/png" sizes="192*192" href="images/logo.png">
+       <link rel="apple-touch-icon" href="images/logo.png">
+       <meta name="theme-color" content="#f47f15">
+       <script>
+       if('serviceWorker' in navigator){
+           window.addEventListener('load', function(){
+               navigator.serviceWorker.register('sw.js').then(
+               function(registration){
+                   //Registration was successful
+                   console.log('ServiceWorker registration successful with scope: ', registration.scope)
+               },
+               function(err){
+                   //registration failed
+                   console.log('ServiceWorker registration failed: ', err)
+               })
+           })
+       }
+   </script>
+    </head>
+    
+    <body>
+    
+    <div id="container">
+        <div></div>
+        <div class="containt">
+            <div class="quotes">Citation du jour</div>
+        </div>
+        <div class="down">
+            <button>Generer</button>
+        </div>
+        
+    </div>  
+    
+   <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js">
+   </script>
+   <script src="scripts/quotes.js"></script>
+   <script src="scripts/script.js"></script>
+   
+    </body>
+    
+</html>
