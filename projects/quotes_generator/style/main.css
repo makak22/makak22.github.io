@@ -1,8 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
+}
+
+body {
+  font-family: 'Pacifico';
 }
 
 #container {
@@ -13,6 +19,7 @@
   -ms-grid-columns: 10% 80% 10%;
       grid-template-columns: 10% 80% 10%;
   height: 100vh;
+  background-color: #EDC2B9;
 }
 
 .containt {
@@ -38,6 +45,11 @@
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 3;
+}
+
+.quotes {
+  color: #232C86;
+  font-size: 30px;
 }
 
 .down {
@@ -66,5 +78,18 @@
 
 button {
   border-radius: 50px;
+}
+
+@media screen and (max-width: 420px) {
+  #container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 70% 1fr;
+        grid-template-rows: 1fr 70% 1fr;
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+    height: 100vh;
+    background-color: #EDC2B9;
+  }
 }
 /*# sourceMappingURL=main.css.map */

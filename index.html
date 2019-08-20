@@ -31,7 +31,7 @@
 									<p>Web Programer</p>
 								</header>
 								<a href="#work" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<span class="arrow icon fa-chevron-right"><span>See my works</span></span>
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
@@ -51,7 +51,7 @@
 								<section>
 									<div class="row">
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="projects/quotes_generator/index.html" class="image fit"><img src="images/quotes_generator.png" alt=""></a>
+											<a href="projects/quotes_generator/index.html" class="image fit"><img src="images/quotes_generator.png" alt="quotes generator"></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
@@ -69,7 +69,7 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<form id="gform" action="https://script.google.com/macros/s/AKfycbwlVIe9YBuVMcXGjV3XVJwf3jTmgtbPOWIdMxOGvA/exec" method="POST">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
@@ -90,6 +90,9 @@
 										</div>
 									</div>
 								</form>
+								<div style="display:none" id="thankyou_message">
+									<h2>Thanks for contacting us!</h2>
+								</div>
 							</article>
 
 					</div>
@@ -104,11 +107,13 @@
 			</div>
 
 		<!-- Scripts -->
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
 	</body>
 </html>

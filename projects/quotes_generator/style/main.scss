@@ -1,14 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+//colors
+$back-color: #EDC2B9;
+$text-color: #232C86;
+
+//Page
 *{
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
   }
 
+body{
+    font-family: 'Pacifico';
+ }
+
 #container{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 10% 80% 10%;
     height: 100vh;
+    background-color: $back-color;
       
   }
 .containt{
@@ -23,6 +36,11 @@
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
+.quotes{
+  color: $text-color;
+  font-size: 30px;
+}
 
 
 .down{
@@ -40,4 +58,20 @@
 
 button{
     border-radius: 50px;
+}
+
+// Responsive part
+
+@media	screen	and	(max-width:	420px)	{
+  #container{
+    display: grid;
+    grid-template-rows: 1fr 70% 1fr;
+    grid-template-columns: 10% 80% 10%;
+    height: 100vh;
+    background-color: $back-color;
+      
+  }
+
+  
+
 }
