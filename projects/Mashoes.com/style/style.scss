@@ -1,0 +1,463 @@
+//-----------------------------------Color-------------------------------//
+$color-00:  rgb(151, 209, 211) ;
+$color-01 : rgb(130, 240, 179);
+$color-02: rgb(43, 211, 9);
+$color-03: rgba(177, 74, 74, 0.63);
+$color-04: rgb(166, 27, 194);
+$color-05: rgba(146, 111, 15, 0.473);
+$color-06: rgb(50, 125, 175);
+$color-menu: black;
+$color-button: #F2B440;
+$color-cart-side: rgb(252, 252, 252);
+// -----------------------------------Body--------------------------------------//
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    display: grid;
+    grid-template-columns: 7% 1fr 1fr 7%;
+    height: 100vh;
+}
+
+//-----------------------------------Menu-----------------------------//
+.menu{
+    display: grid;
+    grid-template-rows: 1fr 70vh 1fr;
+    height: 100vh;
+}
+
+.menu-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.menu-logo img{
+    width: 60%;
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.menu-icon{
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    padding: 4px 8px;
+    height: 40px;
+    width: 50px;
+}
+.menu-icon span{
+    width: 100%;
+    height: 4px;
+    background-color: $color-menu;
+    margin: 4px 0;
+    display: block;
+}
+
+//-----------------------------Shoes-----------------------------------------//
+.main-shoe{
+    background-color: $color-00;
+    display: grid;
+    grid-template-columns: 5% auto 20%;
+    grid-template-rows: 10% auto 10%;
+}
+.main-shoe-m{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+.shoeimg{
+    width: 350px;
+    transform: rotate(-45deg);   
+}
+.shoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.shoes01{
+    background-color: $color-01;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.shoes01 img{
+    width: 250px;
+    
+}
+
+.shoes02{
+    background-color: $color-02;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.shoes02 img{
+    width: 250px;
+    
+}
+
+.shoes03{
+    background-color: $color-03;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.shoes03 img{
+    width: 250px;   
+}
+
+.shoes04{
+    background-color: $color-04;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.shoes04 img{
+    width: 250px;
+}
+
+.shoes05{
+    background-color: $color-05;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.shoes05 img{
+    width: 250px;  
+}
+
+.shoes06{
+    background-color: $color-06;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.shoes06 img{
+    width: 250px;    
+}
+
+//----------------------------------Cart------------------------------------------//
+
+.cart-side{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.cart img{
+    width: 30px;  
+}
+
+.site-name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.cart-side p{
+    transform: rotate(90deg);
+    font-size: 16px;
+}
+ //------------------------nav-side--------------------------------------------// 
+
+ #nav-side {
+    height: 100%;
+    width: 0;      // 44vw
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 6vw;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+  }
+.nav-side-grid{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 70vh 1fr;
+}
+
+// ***********************Return button **********************************//
+.return{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.return span{
+    position: absolute;
+    right: 35px;
+    font-size: 70px;
+    margin-left: 50px;
+}
+
+//******************************Products***************************************//
+
+.products{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 20% 80%;
+}
+
+.categories{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.categories-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nike{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nike-icon{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nike-icon img{
+    width: 80px;
+}
+
+.vans{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.vans-icon{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.vans-icon img{
+    width: 80px;
+}
+
+.addidas{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.addidas-icon{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.addidas-icon img{
+    width: 80px;
+}
+ul {
+    list-style: none;
+    position: relative;
+    right: 20px;
+  }
+  
+ul li{
+    margin-top: 15px;
+
+}
+
+// **************************** Social Media ***********************************//
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.social-media a{
+    margin-right: 25px;
+    cursor: pointer;
+}
+.social-media img{
+    width: 30px;   
+}
+
+//------------------------------------Cart Side--------------------------------//
+
+#cart-side {
+    height: 100%;
+    width: 0;      // 23vw
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 7vw;
+    background-color: $color-cart-side;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+  }
+.cart-side-grid{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 65vh 5vh 1fr;
+}
+
+//****************************Return button***************************//
+
+.cart-side-grid .return span{
+    position: absolute;
+    left: 0px;
+    font-size: 70px;
+    margin-left: 50px;
+}
+
+//****************************************Items*********************************//
+
+.item-01{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+.item-01 img{
+    width:90px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
+.item-02{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+.item-02 img{
+    width:90px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.amount{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.amount span{
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+//**************************************subtotal*******************************//
+.subtotal{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.subtotal .one{
+    text-decoration: underline;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+//********************************Buy*****************************************//
+.buy-side{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-side button{
+    width: 100px;
+    height: 30px;
+    background-color: $color-button;
+    border-radius: 5px;
+    border: 0;
+}

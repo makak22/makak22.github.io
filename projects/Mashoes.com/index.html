@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<div>
+
+    <head>
+        <title>Mashoes</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="icon" type="image/png" href="assets/icon.png"/>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div id="nav-side">
+                <div class="nav-side-grid">
+                    <div class="return">
+                        <span onclick="closeNav()">&times;</span>
+                    </div>
+
+                    <div class="products">
+                        <div class="nike-icon">
+                            <a href="#"><img src="assets/nike-icon.png"></a>
+                        </div>
+                        <div class="vans-icon">
+                            <a href="#"><img src="assets/vans-icon.png"></a>
+                        </div>
+                        <div class="addidas-icon">
+                            <a href="#"><img src="assets/addidas-icon.png"></a>
+                        </div>
+                        <div class="categories">
+                            <div class="categories-grid">
+                                    <div class="nike">
+                                            <ul>
+                                                <li>Air Max 270</li>
+                                                <li>Air Jordan 1</li>
+                                                <li>Nike Air Force 1</li>
+                                                <li>Nike Presto</li>
+                                                <li>Nike Roshe G</li>
+                                            </ul>
+                                        </div>
+            
+                                        <div class="vans">
+                                            <ul>
+                                                <li>Vans Authentic</li>
+                                                <li>Vans SF Skate</li>
+                                                <li>Vans SK8 Hi</li>
+                                                <li>Vans Era Low Top</li>
+                                                <li>Vans Old Skool</li>
+                                            </ul>
+                                        </div>
+            
+                                        <div class="addidas">
+                                            <ul>
+                                                <li>Addidas Ultra Boost</li>
+                                                <li>Addidas NMD R1</li>
+                                                <li>Addidas Stan Smith</li>
+                                                <li>Addidas Gazelle</li>
+                                                <li>Addidas SuperStar</li>
+                                            </ul>
+                                        </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><img src="assets/social_media/facebook.png"></a>
+                        <a href="#"><img src="assets/social_media/instagram.png"></a>
+                        <a href="#"><img src="assets/social_media/twitter.png"></a>
+                    </div>
+
+                </div>
+            </div>
+            <!--Cart Side -->
+            <div id="cart-side">
+                <div class="cart-side-grid">
+                    <div class="return">
+                            <span onclick="closeNavCart()">&times;</span>
+                    </div>
+                    <div class="items">
+                        <div class="item-01">
+                            <img src="assets/vans.png">
+                            <div class="block">
+                                <span style="text-align: center">Vans SK8 Hi</span>
+                                <div class="qty">
+                                    <button class="minus">-</button>
+                                    <span class="value">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                            </div>
+                            
+                            <div class="amount">
+                                    <span class="price">$ 153.00</span>
+                                    <span>&times;</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="item-02">
+                                <img src="assets/nike.png">
+                                <div class="block">
+                                    <span style="text-align: center">Nike Air Force 1</span>
+                                    <div class="qty">
+                                        <button class="minus">-</button>
+                                        <span class="value">1</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="amount">
+                                        <span class="price">$ 253.00</span>
+                                        <span>&times;</span>
+                                </div>
+                                
+                            </div>
+                
+                    </div>
+                    <div class="subtotal">
+                        <span class="one">Subtotal:</span><span> $ 953.00</span>
+                    </div>
+                    <div class="buy-side">
+                        <button>BUY</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="menu">
+                    <div class="menu-logo">
+                        <img src="assets/icon.png">
+                    </div>
+                    
+                    <div class="menu-bar">
+                        <div id="menu-icon" class="menu-icon" onclick="openNav()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>    
+                    </div>
+    
+                </div>
+    
+                <div class="main-shoe">
+                    <div class="main-shoe-m">
+                        <img class="shoeimg" src="assets/vans.png">
+                    </div>
+                </div>
+                
+                <div class="shoes">
+                    <div class="shoes01"><img src="assets/airjordan1.png"></div>
+                    <div class="shoes02"><img src="assets/nmdr1.png"></div>
+                    <div class="shoes03"><img src="assets/nike.png"></div>
+                    <div class="shoes04"><img src="assets/airmax270.png"></div>
+                    <div class="shoes05"><img src="assets/stansmith.png"></div>
+                    <div class="shoes06"><img src="assets/underarmor.png"></div>
+    
+                </div>
+    
+                <div class="cart-side">
+                    <div class="cart">
+                        <div id="cart" onclick="openNavCart()">
+                            <a href="#"><img src="assets/bagicon01.png"></a>
+                        </div> 
+                    </div>
+                    <div class="site-name">
+                        <p><a href="#">Mashoes.com</a></p>
+                    </div>
+                    
+                </div>
+    
+            </div>
+        </div>
+            
+
+        <script src="scripts/main.js"></script>
+            </body>
+</html>
