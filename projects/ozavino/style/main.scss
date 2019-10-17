@@ -1,16 +1,18 @@
 *{
     box-sizing: border-box;
     font-family: Roboto;
+    margin: 0;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 20px;
 }
 .humberger-menu{
     display: block;
-    margin-top: 5%; 
+    margin-top: 5%;
+    margin-right: 5%; 
 }
 .hm {
     width: 35px;
@@ -21,10 +23,26 @@
   
 
 .first{
-    margin-left: 5px;
+    padding-top: 15px; 
     background: #1A6A98;
     height: 50vh;
     color: white;
+   
+}
+
+.top{
+    font-size: 28px;
+}
+
+.about{
+    font-size: 18px;
+    padding-top: 20px; 
+}
+.text{
+    margin: 5px 0 0 10px;
+    columns: 1;
+    column-gap: 5em;
+    
 }
 
 .team{
