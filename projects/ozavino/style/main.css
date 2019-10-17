@@ -54,9 +54,12 @@
 
 .first {
   padding-top: 80px;
-  background: #1A6A98;
   height: 85vh;
   color: white;
+  background-image: url("../assets/bg.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .top {
@@ -110,7 +113,7 @@ h2 {
 }
 
 .stats {
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
   background: #6C4A13;
   height: auto;
   color: white;
@@ -125,6 +128,14 @@ h2 {
 .stats p {
   font-family: 'Roboto-Bold';
   font-size: 28px;
+}
+
+.equipe {
+  margin-top: 50px;
+}
+
+.equipe h1 {
+  text-align: center;
 }
 
 .team {
