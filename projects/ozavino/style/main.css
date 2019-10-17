@@ -4,6 +4,27 @@
   font-family: Roboto;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.humberger-menu {
+  display: block;
+  margin-top: 5%;
+}
+
+.hm {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
 .contacts {
   text-align: center;
 }
