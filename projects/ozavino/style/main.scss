@@ -100,7 +100,7 @@ h2{
 .stats{
     padding-top: 20px; 
     background: #6C4A13;
-    height: 50vh;
+    height: auto;
     color: white;
     text-align: center;
 }
@@ -115,7 +115,7 @@ h2{
 }
 
 .team{
-    margin: 50px 0 50px 0;
+    margin: 70px 0 20px 0;
     text-align: center;
     display: flex;
     overflow-x: auto;
@@ -138,7 +138,7 @@ h2{
 }
 
 .team img{
-    width: 50%;
+    width: 60%;
 }
 .nom{
     font-family: 'Roboto-Regular';
