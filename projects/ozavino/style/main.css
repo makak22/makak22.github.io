@@ -8,6 +8,11 @@
   src: url("../assets/Roboto/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  src: url("../assets/Roboto/Roboto-ThinItalic.ttf");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -113,13 +118,24 @@ h2 {
 }
 
 .team {
+  margin: 50px 0 50px 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+      scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+.team > div {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: auto;
 }
 
 .oz {
@@ -131,7 +147,17 @@ h2 {
 }
 
 .team img {
-  width: 30%;
+  width: 50%;
+}
+
+.nom {
+  font-family: 'Roboto-Regular';
+  font-size: 25px;
+}
+
+.fonction {
+  font-family: 'Roboto-ThinItalic';
+  font-size: 20px;
 }
 
 .contacts {
