@@ -53,11 +53,12 @@
 .services{
     text-align: center;
     margin-top: 50px;
+   
 }
 h1{
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Roboto-Bold';
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 h2{
     font-size: 20px;
@@ -67,13 +68,15 @@ h2{
 .services p{
     font-size: 18px;
     font-family: 'Roboto-Regular';
+    margin: auto;
+    width: 70%;
 }
 .services img{
     width: 50%;
 }
 
 .info{
-    margin: 80px 0 80px 0;
+    margin: 30px 0 80px 0;
 }
 .text{
     margin: 5px 0 0 10px;
@@ -82,8 +85,27 @@ h2{
     
 }
 
+.stats{
+    padding-top: 20px; 
+    background: #6C4A13;
+    height: 50vh;
+    color: white;
+    text-align: center;
+}
+
+.stats span{
+    font-family: 'Roboto-Bold';
+    font-size: 50px;
+}
+.stats p{
+    font-family: 'Roboto-Bold';
+    font-size: 28px;
+}
+
 .team{
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .oz{

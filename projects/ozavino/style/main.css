@@ -61,9 +61,9 @@
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Roboto-Bold';
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 h2 {
@@ -74,6 +74,8 @@ h2 {
 .services p {
   font-size: 18px;
   font-family: 'Roboto-Regular';
+  margin: auto;
+  width: 70%;
 }
 
 .services img {
@@ -81,7 +83,7 @@ h2 {
 }
 
 .info {
-  margin: 80px 0 80px 0;
+  margin: 30px 0 80px 0;
 }
 
 .text {
@@ -92,8 +94,32 @@ h2 {
           column-gap: 5em;
 }
 
+.stats {
+  padding-top: 20px;
+  background: #6C4A13;
+  height: 50vh;
+  color: white;
+  text-align: center;
+}
+
+.stats span {
+  font-family: 'Roboto-Bold';
+  font-size: 50px;
+}
+
+.stats p {
+  font-family: 'Roboto-Bold';
+  font-size: 28px;
+}
+
 .team {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .oz {
