@@ -20,9 +20,25 @@
 
 .hm {
   width: 35px;
-  height: 5px;
+  height: 4px;
   background-color: black;
-  margin: 6px 0;
+  margin: 4px 0;
+}
+
+.team {
+  text-align: center;
+}
+
+.oz {
+  margin-bottom: 50px;
+}
+
+.mp {
+  margin-bottom: 50px;
+}
+
+.team img {
+  width: 30%;
 }
 
 .contacts {
