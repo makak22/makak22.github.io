@@ -171,9 +171,9 @@ h2 {
 }
 
 .testimony {
-  padding-top: 20px;
+  padding: 20px 0 5px 0;
   background: #1A6A98;
-  height: 60vh;
+  height: auto;
   color: white;
   text-align: center;
 }
