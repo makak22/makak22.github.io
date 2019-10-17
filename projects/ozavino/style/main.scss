@@ -10,6 +10,14 @@
     font-family: 'Roboto-ThinItalic';
     src: url('../assets/Roboto/Roboto-ThinItalic.ttf');
   }
+  @font-face {
+    font-family: 'Roboto-Light';
+    src: url('../assets/Roboto/Roboto-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../assets/Roboto/Roboto-Medium.ttf');
+  }
   
 
 *{
@@ -38,7 +46,7 @@
 .first{
     padding-top: 80px; 
     background: #1A6A98;
-    height: 80vh;
+    height: 85vh;
     color: white;
    
 }
@@ -140,23 +148,72 @@ h2{
     font-family: 'Roboto-ThinItalic';
     font-size: 20px;
 }
+
+.testimony{
+    padding-top: 20px; 
+    background: #1A6A98;
+    height: 60vh;
+    color: white;
+    text-align: center;
+}
+.temoignages{
+    text-align: center;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    width: 70%;
+    margin: auto;
+}
+.temoignages > div{
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+
+.testi{
+    margin-right: 70px;
+}
+.testi p{
+    font-family: 'Roboto-ThinItalic';
+    font-size: 20px;
+}
+.testi span{
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+}
 .contacts{
     text-align: center;
+    margin: 40px 0 50px 0; 
+}
+h3{
+    font-family: 'Roboto-Medium';
+    font-size: 25px;
+}
+.meeting{
+    font-family: 'Roboto-Light';
+    font-size: 20px;
 }
 
 .bottom{
     text-align: center;
-    margin-top: auto;
+    margin: 40px 0 20px 0;
 }
 .social-media{
     display: flex;
     justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
 }
 .social-media img{
-    width: 60%;
+    width: 45%;
 }
 
 .copyright{
-    font-size: 15px;    
+    text-align: center;
+    font-size: 15px;   
+    font-family: 'Roboto-Light';
+    margin-bottom: 10px; 
 }
 
