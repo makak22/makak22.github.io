@@ -122,20 +122,24 @@ h2{
 .equipe h1{
     text-align: center;
 }
-.team{
-    margin: 70px 0 20px 0;
-    text-align: center;
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; 
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
+@media screen and (max-width: 750px){
+
+    .team{
+        margin: 70px 0 20px 0;
+        text-align: center;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        scroll-snap-points-x: repeat(300px);
+        scroll-snap-type: mandatory;
+    }
+    .team > div{
+        flex-shrink: 0;
+        width: 100%;
+        height: auto;
+    }
 }
-.team > div{
-    flex-shrink: 0;
-    width: 100%;
-    height: auto;
-}
+
 
 .oz{
     margin-bottom: 50px;
@@ -146,7 +150,7 @@ h2{
 }
 
 .team img{
-    width: 60%;
+    width: 45%;
 }
 .nom{
     font-family: 'Roboto-Regular';
@@ -164,24 +168,29 @@ h2{
     color: white;
     text-align: center;
 }
-.temoignages{
+@media screen and (max-width: 750px){
+    .temoignages{
     text-align: center;
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch; 
     scroll-snap-points-x: repeat(300px);
     scroll-snap-type: mandatory;
     width: 70%;
     margin: auto;
-}
-.temoignages > div{
+    }
+    .temoignages > div{
     flex-shrink: 0;
     width: 100%;
     height: auto;
+    }
 }
 
 .testi{
-    margin-right: 70px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-rows: 80% 10%;
 }
 .testi p{
     font-family: 'Roboto-ThinItalic';
@@ -198,6 +207,13 @@ h2{
 h3{
     font-family: 'Roboto-Medium';
     font-size: 25px;
+}
+@media screen and (max-width: 750px){
+    .meeting{
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
 }
 .meeting{
     font-family: 'Roboto-Light';
@@ -225,3 +241,262 @@ h3{
     margin-bottom: 10px; 
 }
 
+//*****************************- media -**********************************************/
+
+@media screen and (min-width: 736px){
+
+    .body{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 5% 20px 5%;
+    }
+    .humberger-menu{
+        display: none;
+    }
+    .text{
+        margin: 5px 0 0 10px;
+        columns: 1;
+        column-gap: 5em;
+        
+    }
+    .top{
+        font-size: 35px;
+        font-family: 'Roboto-Bold';
+        max-width: 90%;
+        margin: auto;
+    }
+    
+    .about{
+        font-size: 28px;
+        padding-top: 70px; 
+        font-family: 'Roboto-Regular';
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .services{
+        margin-top: 100px;
+       
+    }
+    h1{
+        font-size: 55px;
+        margin-bottom: 100px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    
+    .services p{
+        font-size: 28px;
+        margin: auto;
+        width: 70%;
+    }
+    .services img{
+        width: 50%;
+    }
+
+    .info{
+        margin: 60px 0 100px 0;
+    }
+    
+    // stats
+    .stats{
+        padding: 20px 0 20px 0; 
+        background: #6C4A13;
+        height: auto;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .stats span{
+        font-family: 'Roboto-Bold';
+        font-size: 50px;
+    }
+    .stats p{
+        font-family: 'Roboto-Bold';
+        font-size: 28px;
+    }
+
+
+    // team
+    .equipe{
+        margin-top: 100px;
+    }
+    .equipe h1{
+        text-align: center;
+    }
+    .team{
+        margin: 70px 0 20px 0;
+        text-align: center;
+        display: flex;
+    }
+    
+    .oz{
+        margin-bottom: 50px;
+    }
+    
+    .mp{
+        margin-bottom: 50px;
+    }
+    
+    .team img{
+        width: 40%;
+    }
+    .nom{
+        font-family: 'Roboto-Regular';
+        font-size: 25px;
+    }
+    .fonction{
+        font-family: 'Roboto-ThinItalic';
+        font-size: 20px;
+    }
+
+    // testimony
+
+    .temoignages{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        margin: 0 0 2% 6%;
+        }
+    
+    // contacts
+
+    .contact-sub{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cross1 {
+        width: 300px;
+        height: 4px;
+        background-color: black;
+        transform: rotate(-45deg);
+      }
+    .cross2 {
+        width: 300px;
+        height: 4px;
+        background-color: black;
+        transform: rotate(45deg);  
+      }
+    .cross{
+        margin-left: -100px;
+    }
+    
+    // bottom
+
+    .bottom{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 0;
+        background: #1A6A98;
+        margin:0;
+        padding-top: 15px;
+    }
+    
+    .copyright{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-right: -40%;;
+    }
+    .copyright p{
+        font-size: 20px;
+        color: white;
+    }
+    .social-media{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-right: 5px;;
+        width: 60%
+    }
+    .social-media img{
+        width: 20px;
+        margin: 10px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 938px){
+    
+    .top{
+        font-size: 28px;
+        font-family: 'Roboto-Bold';
+        width: 50%;
+        margin-left: 5%;
+    }
+    
+    .about{
+        font-size: 18px;
+        padding-top: 70px; 
+        font-family: 'Roboto-Regular';
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    h1{
+        margin:80px 0 60px 0;
+    }
+    h2{
+        font-size: 30px;
+        font-family: 'Roboto-Bold';
+    }
+    .services{
+        text-align: center;
+        margin:auto;
+        width: 90%;
+       
+    }
+    .services p{
+        text-align: left;
+        font-size: 28px;
+        font-family: 'Roboto-Regular';
+        margin: auto;
+        width: 70%;
+    }
+    .services img{
+        width: 80%;
+    }
+    
+    .info{
+        margin: 30px 0 80px 0;
+        
+    }
+
+    .service_one{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 150px;
+    }
+    .service_one .info{
+        margin-top: 100px;
+    }
+    .service_two{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 0;
+        margin-bottom: 150px;
+    }
+    .service_two .info{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top: 100px;
+    }
+    .service_two img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: auto;
+    }
+    .service_three{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 150px;
+    }
+    .service_three .info{
+        margin-top: 100px
+    }
+}

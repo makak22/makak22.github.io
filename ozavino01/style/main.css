@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../assets/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../assets/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  src: url("../assets/Roboto/Roboto-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../assets/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../assets/Roboto/Roboto-Medium.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 20px 0;
+}
+
+.humberger-menu {
+  display: block;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+.hm {
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+.first {
+  padding-top: 80px;
+  height: 85vh;
+  color: white;
+  background-image: url("../assets/bg.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.top {
+  font-size: 28px;
+  font-family: 'Roboto-Bold';
+}
+
+.about {
+  font-size: 18px;
+  padding-top: 70px;
+  font-family: 'Roboto-Regular';
+}
+
+.services {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: 'Roboto-Bold';
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Roboto-Bold';
+}
+
+.services p {
+  font-size: 18px;
+  font-family: 'Roboto-Regular';
+  margin: auto;
+  width: 70%;
+}
+
+.services img {
+  width: 50%;
+}
+
+.info {
+  margin: 30px 0 80px 0;
+}
+
+.text {
+  margin: 5px 0 0 10px;
+  -webkit-columns: 1;
+          columns: 1;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
+}
+
+.stats {
+  padding: 20px 0 20px 0;
+  background: #6C4A13;
+  height: auto;
+  color: white;
+  text-align: center;
+}
+
+.stats span {
+  font-family: 'Roboto-Bold';
+  font-size: 50px;
+}
+
+.stats p {
+  font-family: 'Roboto-Bold';
+  font-size: 28px;
+}
+
+.equipe {
+  margin-top: 50px;
+}
+
+.equipe h1 {
+  text-align: center;
+}
+
+.team {
+  margin: 70px 0 20px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+      scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+.team > div {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+.oz {
+  margin-bottom: 50px;
+}
+
+.mp {
+  margin-bottom: 50px;
+}
+
+.team img {
+  width: 60%;
+}
+
+.nom {
+  font-family: 'Roboto-Regular';
+  font-size: 25px;
+}
+
+.fonction {
+  font-family: 'Roboto-ThinItalic';
+  font-size: 20px;
+}
+
+.testimony {
+  padding: 20px 0 5px 0;
+  background: #1A6A98;
+  height: auto;
+  color: white;
+  text-align: center;
+}
+
+.temoignages {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+      scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  width: 70%;
+  margin: auto;
+}
+
+.temoignages > div {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+.testi {
+  margin-right: 70px;
+}
+
+.testi p {
+  font-family: 'Roboto-ThinItalic';
+  font-size: 20px;
+}
+
+.testi span {
+  font-family: 'Roboto-Light';
+  font-size: 20px;
+}
+
+.contacts {
+  text-align: center;
+  margin: 40px 0 80px 0;
+}
+
+h3 {
+  font-family: 'Roboto-Medium';
+  font-size: 25px;
+}
+
+.meeting {
+  font-family: 'Roboto-Light';
+  font-size: 20px;
+}
+
+.bottom {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+.social-media img {
+  width: 45%;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Roboto-Light';
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=main.css.map */
